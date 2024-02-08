@@ -66,6 +66,20 @@ public class ValueObject_Normal
         result.Should().Be(expected);
         resultEqual.Should().BeFalse();
     }
+
+    [Theory(DisplayName = "Name Equality Tests")]
+    [InlineData("John", "John", true)]
+    [InlineData("John", "Jane", false)]
+    public void NameEqualityTests(string value1, string value2, bool expected)
+    {
+        // Arrange
+        var name1 = new Name(value1);
+        var name2 = new Name(value2);
+
+        // Act
+        bool result = name1.Equals(name2);
+        bool resultEqual = name1 == name2;
+
         // Assert
         result.Should().Be(expected);
         resultEqual.Should().Be(expected);
