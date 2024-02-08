@@ -37,7 +37,7 @@ public class FullName
     }
 }
 
-public class FullName_IEquatable : IEquatable<FullName>
+public class FullName_IEquatable : IEquatable<FullName_IEquatable>
 {
     public FullName_IEquatable(string firstName, string lastName)
     {
@@ -48,7 +48,7 @@ public class FullName_IEquatable : IEquatable<FullName>
     public string FirstName { get; }
     public string LastName { get; }
 
-    public bool Equals(FullName other)
+    public bool Equals(FullName_IEquatable other)
     {
         if (ReferenceEquals(null, other)) return false;
         if (ReferenceEquals(this, other)) return true;
@@ -59,8 +59,8 @@ public class FullName_IEquatable : IEquatable<FullName>
     {
         if (ReferenceEquals(null, obj)) return false;
         if (ReferenceEquals(this, obj)) return true;
-        if (obj.GetType() != typeof(FullName)) return false;
-        return Equals((FullName)obj);
+        if (obj.GetType() != this.GetType()) return false;
+        return Equals((FullName_IEquatable)obj);
     }
 
     public override int GetHashCode()
