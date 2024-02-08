@@ -45,4 +45,17 @@ public class ValueObject_Record
         result.Should().Be(expected);
         resultEqual.Should().Be(expected);
     }
+
+    [Fact(DisplayName = "Name Exception Test")]
+    public void NameExceptionTest()
+    {
+        // Arrange
+        string value = "NameLongerThan10Characters";
+
+        // Act
+        Action createName = () => new Name(value);
+
+        // Assert
+        createName.Should().Throw<ArgumentException>();
+    }
 }
