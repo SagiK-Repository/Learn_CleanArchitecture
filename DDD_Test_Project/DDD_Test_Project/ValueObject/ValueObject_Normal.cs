@@ -1,4 +1,4 @@
-﻿namespace DDD_Test_Project.ValueObject;
+﻿namespace DDD_Test_Project.ValueObject_Normal;
 
 public class ValueObject_Normal_readonly
 {
