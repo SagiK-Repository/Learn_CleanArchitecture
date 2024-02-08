@@ -2,7 +2,7 @@
 
 namespace DDD_Test_Project.ValueObject_ValueObject;
 
-public class FullName : ValueObject
+public class FullName : Common.ValueObject_Normal
 {
     public string FirstName { get; }
     public string LastName { get; }
@@ -19,7 +19,7 @@ public class FullName : ValueObject
     }
 }
 
-public class Name : ValueObject
+public class Name : Common.ValueObject_Normal
 {
     public Name(string value)
     {
@@ -36,3 +36,39 @@ public class Name : ValueObject
         yield return Value;
     }
 }
+
+public sealed class FullName_2 : ValueObject
+{
+    public string FirstName { get; }
+    public string LastName { get; }
+
+    public FullName_2(string firstName, string lastName)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+    }
+    protected override IEnumerable<object> GetAtomicValues()
+    {
+        yield return FirstName;
+        yield return LastName;
+    }
+}
+
+public sealed class Name_2 : ValueObject
+{
+    public Name_2(string value)
+    {
+        if (value.Length > 10)
+            throw new ArgumentException("Name length must be 10 characters or less.");
+
+        Value = value;
+    }
+
+    public string Value { get; }
+
+    protected override IEnumerable<object> GetAtomicValues()
+    {
+        yield return Value;
+    }
+}
+

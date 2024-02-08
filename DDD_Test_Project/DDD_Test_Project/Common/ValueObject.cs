@@ -1,53 +1,39 @@
 ﻿namespace DDD_Test_Project.Common;
 
-public abstract class ValueObject
+public abstract class ValueObject : IEquatable<ValueObject>
 {
-    protected static bool EqualOperator(ValueObject left, ValueObject right)
+    public static bool operator ==(ValueObject? a, ValueObject? b)
     {
-        if (ReferenceEquals(left, null) ^ ReferenceEquals(right, null))
+        if (a is null && b is null)
         {
-            return false;
+            return true;
         }
-        return ReferenceEquals(left, right) || left.Equals(right);
-    }
 
-    protected static bool NotEqualOperator(ValueObject left, ValueObject right)
-    {
-        return !EqualOperator(left, right);
-    }
-
-    protected abstract IEnumerable<object> GetEqualityComponents();
-
-    public override bool Equals(object obj)
-    {
-        if (obj == null || obj.GetType() != GetType())
+        if (a is null || b is null)
         {
             return false;
         }
 
-        var other = (ValueObject)obj;
-
-        return GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
+        return a.Equals(b);
     }
 
-    public override int GetHashCode()
-    {
-        return GetEqualityComponents()
-            .Select(x => x != null ? x.GetHashCode() : 0)
-            .Aggregate((x, y) => x ^ y);
-    }
+    public static bool operator !=(ValueObject? a, ValueObject? b) =>
+        !(a == b);
 
-    public static bool operator ==(ValueObject left, ValueObject right)
-    {
-        if (ReferenceEquals(left, null))
-        {
-            return ReferenceEquals(right, null);
-        }
-        return left.Equals(right);
-    }
+    public virtual bool Equals(ValueObject? other) =>
+        other is not null && ValuesAreEqual(other);
 
-    public static bool operator !=(ValueObject left, ValueObject right)
-    {
-        return !(left == right);
-    }
+    public override bool Equals(object? obj) =>
+        obj is ValueObject valueObject && ValuesAreEqual(valueObject);
+
+    public override int GetHashCode() =>
+        GetAtomicValues().Aggregate(
+            default(int),
+            (hashcode, value) =>
+                HashCode.Combine(hashcode, value.GetHashCode()));
+
+    protected abstract IEnumerable<object> GetAtomicValues();
+
+    private bool ValuesAreEqual(ValueObject valueObject) =>
+        GetAtomicValues().SequenceEqual(valueObject.GetAtomicValues());
 }
