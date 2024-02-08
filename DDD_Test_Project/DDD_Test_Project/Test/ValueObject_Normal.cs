@@ -64,6 +64,10 @@ public class ValueObject_Normal
 
         // Assert
         result.Should().Be(expected);
+        resultEqual.Should().BeFalse();
+    }
+        // Assert
+        result.Should().Be(expected);
         resultEqual.Should().Be(expected);
     }
 }
