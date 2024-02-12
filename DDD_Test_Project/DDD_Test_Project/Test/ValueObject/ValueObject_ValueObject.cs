@@ -1,6 +1,6 @@
 ﻿using DDD_Test_Project.ValueObject_ValueObject;
 
-namespace DDD_Test_Project.Test;
+namespace DDD_Test_Project.Test.ValueObject;
 
 public class ValueObject_ValueObject
 {
