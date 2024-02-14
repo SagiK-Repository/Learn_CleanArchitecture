@@ -13,3 +13,7 @@ Learn_DDD, Domain Driven Design, 도메인 주도 설계 익히기
 ---
 
 <br><br>
+
+# 용어
+### Entity(앤티티)의 유래 (https://github.com/SagiK-Repository/Learn_DDD/issues/2)
+
