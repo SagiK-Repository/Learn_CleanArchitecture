@@ -2,8 +2,9 @@
 
 <br>
 
-# Learn_DDD
-Learn_DDD, Domain Driven Design, 도메인 주도 설계 익히기
+# Learn_CleanArchitecture
+- Learn_DDD, Domain Driven Design, 도메인 주도 설계 익히기
+- Learn CleanArchitecture
 
 ### 제작자
 [@SAgiKPJH](https://github.com/SAgiKPJH)
