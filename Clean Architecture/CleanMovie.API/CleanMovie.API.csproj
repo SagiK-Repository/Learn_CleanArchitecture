@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanMovie.Application\CleanMovie.Application.csproj" />
+    <ProjectReference Include="..\CleanMovie.Infrastructure\CleanMovie.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
