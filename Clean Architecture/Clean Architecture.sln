@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.Application", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.Infrastructure", "CleanMovie.Infrastructure\CleanMovie.Infrastructure.csproj", "{ECF2567C-DA13-48A8-9E75-2B6C67895345}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.API", "CleanMovie.API\CleanMovie.API.csproj", "{91326FFD-1D77-4151-8185-DE3CC29B9AD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ECF2567C-DA13-48A8-9E75-2B6C67895345}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF2567C-DA13-48A8-9E75-2B6C67895345}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF2567C-DA13-48A8-9E75-2B6C67895345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91326FFD-1D77-4151-8185-DE3CC29B9AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91326FFD-1D77-4151-8185-DE3CC29B9AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91326FFD-1D77-4151-8185-DE3CC29B9AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91326FFD-1D77-4151-8185-DE3CC29B9AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
