@@ -12,8 +12,8 @@ namespace CleanMovie.Infrastructure
     {
         public static List<Movie> movies = new List<Movie>()
         {
-            new Movie { Id = 1, Name = "Passion of Christ", Cost = 2 },
-            new Movie { Id = 2, Name = "Home Alone 4", Cost = 3 }
+            new Movie { MovieId = 1, MovieName = "Passion of Christ", RentalCost = 2 },
+            new Movie { MovieId = 2, MovieName = "Home Alone 4", RentalCost = 3 }
         };
 
         private readonly MovieDBContext _movieDBContext;
