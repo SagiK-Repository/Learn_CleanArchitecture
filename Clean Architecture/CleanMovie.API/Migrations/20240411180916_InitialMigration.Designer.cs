@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanMovie.API.Migrations
 {
     [DbContext(typeof(MovieDBContext))]
-    [Migration("20240411104200_INitialMigration")]
-    partial class INitialMigration
+    [Migration("20240411180916_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
