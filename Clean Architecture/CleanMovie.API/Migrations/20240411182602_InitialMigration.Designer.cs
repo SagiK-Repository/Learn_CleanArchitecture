@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanMovie.API.Migrations
 {
     [DbContext(typeof(MovieDBContext))]
-    [Migration("20240411180916_InitialMigration")]
+    [Migration("20240411182602_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
