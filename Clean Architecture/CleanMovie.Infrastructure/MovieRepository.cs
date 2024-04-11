@@ -16,9 +16,23 @@ namespace CleanMovie.Infrastructure
             new Movie { Id = 2, Name = "Home Alone 4", Cost = 3 }
         };
 
+        private readonly MovieDBContext _movieDBContext;
+
+        public MovieRepository(MovieDBContext movieDBContext)
+        {
+            _movieDBContext = movieDBContext;
+        }
+
+        public Movie CreateMovie(Movie movie)
+        {
+            _movieDBContext.Movies.Add(movie);
+            _movieDBContext.SaveChanges();
+            return movie;
+        }
+
         public List<Movie> GetAllMovies()
         {
-            return movies;
+            return _movieDBContext.Movies.ToList();
         }
     }
 }
