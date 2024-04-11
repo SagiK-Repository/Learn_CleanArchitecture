@@ -16,6 +16,11 @@ namespace CleanMovie.Infrastructure
             new Movie { Id = 2, Name = "Home Alone 4", Cost = 3 }
         };
 
+        public Movie CreateMovie(Movie movie)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Movie> GetAllMovies()
         {
             return movies;
