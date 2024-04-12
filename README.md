@@ -6,6 +6,10 @@
 - Learn_DDD, Domain Driven Design, 도메인 주도 설계 익히기
 - Learn CleanArchitecture
 
+### 목차
+- [x] Youtube - Clean Architecture : Code Unparalleled : https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
+
+
 ### 제작자
 [@SAgiKPJH](https://github.com/SAgiKPJH)
 
