@@ -1,3 +1,4 @@
+using JWP.API.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -11,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Registering Services
+builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 // Adding JWT to the DI Container
 builder.Services.AddAuthentication( x => 
 {
@@ -43,6 +46,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Add Authentication
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
