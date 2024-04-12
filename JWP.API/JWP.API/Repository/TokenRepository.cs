@@ -21,9 +21,9 @@ namespace JWP.API.Repository
             _configuration = configuration;
         }
     
-        public Tokens Authenticate(Users user)
+        public Tokens Authenticate(Users users)
         {
-            if (!UserRecords.Any(x=>x.Key == user.Name && x.Value == user.Password))
+            if (!UserRecords.Any(x=>x.Key == users.Name && x.Value == users.Password))
                 return null;
 
             // We Have Authenticated
@@ -34,7 +34,7 @@ namespace JWP.API.Repository
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, user.Name)
+                    new Claim(ClaimTypes.Name, users.Name)
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
