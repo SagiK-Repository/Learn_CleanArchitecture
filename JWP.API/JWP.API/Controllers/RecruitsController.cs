@@ -30,7 +30,7 @@ namespace JWP.API.Controllers
             };
         }
 
-        // [AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost]
         [Route("authenticate")]
         public IActionResult Authenticate(Users usersData)
