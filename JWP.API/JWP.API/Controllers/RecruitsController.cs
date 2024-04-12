@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JWP.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class RecruitsController : ControllerBase
