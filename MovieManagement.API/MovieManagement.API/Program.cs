@@ -1,3 +1,7 @@
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using MovieManagement.Library.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IDataRepository, DataRepository>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(DataRepository).Assembly));
 
 var app = builder.Build();
 

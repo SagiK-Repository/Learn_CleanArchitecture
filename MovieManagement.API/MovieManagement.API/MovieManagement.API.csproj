@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\MovieManagement.Library\MovieManagement.Library.csproj" />
   </ItemGroup>
 
 </Project>
