@@ -7,7 +7,9 @@
 - Learn CleanArchitecture
 
 ### 목차
-- [x] Youtube - Clean Architecture : Code Unparalleled : https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
+- [x] Youtube - Clean Architecture : Code Unparalleled https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
+- [x] Youtube - JWT : Code Unparalleled https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/13 
+
 
 
 ### 제작자
