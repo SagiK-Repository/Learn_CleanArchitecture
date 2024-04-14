@@ -21,5 +21,14 @@ namespace MovieManagement.API.Controllers
         [HttpGet]
         public async Task<List<MovieModel>> Get()
             => await _mediator.Send(new GetMovieListQuery());
+
+        [HttpGet("{id}")]
+        public async Task<MovieModel> Get(int id)
+            => await _mediator.Send(new GetMovieByIdQuery(id));
+
+        [HttpPost]
+        public async Task<MovieModel> Post(MovieModel movieModel)
+            => await _mediator.Send(new AddMovieCommand(movieModel));
+            
     }
 }
