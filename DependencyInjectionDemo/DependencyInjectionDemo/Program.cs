@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddScoped<DemoLogic>();
+builder.Services.AddScoped<IDemoLogic, DemoLogic>();
 
 var app = builder.Build();
 
