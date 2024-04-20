@@ -25,7 +25,8 @@ public partial class ContosoPizzaPart1Context : DbContext
     public virtual DbSet<Product> Products { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlite("Data Source =ContosoPizza.db");
+        => optionsBuilder.UseNpgsql("User ID=postgres;Password=P@ss0rd;Host=localhost;Port=5432;Database=ContosoPizza;");
+        //=> optionsBuilder.UseSqlite("Data Source =ContosoPizza.db");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
