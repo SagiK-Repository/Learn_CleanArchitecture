@@ -23,7 +23,7 @@ namespace ExisitingDB5API.Pages.Customers
 
         public async Task OnGetAsync()
         {
-            Customer = await _context.Customers.ToListAsync();
+            Customer = await _context.Customers.AsSplitQuery().ToListAsync();
         }
     }
 }
