@@ -15,7 +15,7 @@
 - .Net Core Dependency Injection : IAmTimCorey
   - [x] .NET Core Console App with Dependency Injection, Logging, and Settings https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/20
   - [x] Dependency Injection in .NET Core (.NET 6) https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/18
-
+- [x] Entity Framework Core for Beginners https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/23
 
 
 ### 제작자
