@@ -23,10 +23,7 @@ namespace ExisitingDB5API.Pages.Customers
 
         public async Task OnGetAsync()
         {
-            Customer = await _context.Customers
-                .Include(c => c.Orders)
-                .AsNoTracking()
-                .ToListAsync();
+            Customer = await _context.Customers.ToListAsync();
         }
     }
 }
