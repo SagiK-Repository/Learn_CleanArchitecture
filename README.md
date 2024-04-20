@@ -8,11 +8,13 @@
 
 ### 목차
 - [x] DDD의 Entity와 DB의 Entity 비교 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/3
-- [x] Youtube - Clean Architecture : Code Unparalleled https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
-- [x] Youtube - JWT : Code Unparalleled https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/13
-- [x] CQRS and MediatR https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/15
-- [x] .NET Core Console App with Dependency Injection, Logging, and Settings https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/20
-- [x] Dependency Injection in .NET Core (.NET 6) https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/18
+- CleanArchitecture Code Unparalleled
+  - [x] Youtube - Clean Architecture https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
+  - [x] Youtube - JWT https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/13
+  - [x] CQRS and MediatR https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/15
+- .Net Core Dependency Injection : IAmTimCorey
+  - [x] .NET Core Console App with Dependency Injection, Logging, and Settings https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/20
+  - [x] Dependency Injection in .NET Core (.NET 6) https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/18
 
 
 
