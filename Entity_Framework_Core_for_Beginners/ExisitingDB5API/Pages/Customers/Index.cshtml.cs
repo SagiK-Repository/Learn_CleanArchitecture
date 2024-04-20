@@ -25,6 +25,7 @@ namespace ExisitingDB5API.Pages.Customers
         {
             Customer = await _context.Customers
                 .Include(c => c.Orders)
+                .AsNoTracking()
                 .ToListAsync();
         }
     }
