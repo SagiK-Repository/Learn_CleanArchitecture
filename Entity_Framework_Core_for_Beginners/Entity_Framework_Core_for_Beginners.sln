@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoPizza", "Entity_Framework_Core_for_Beginners\ContosoPizza.csproj", "{AC6F36F7-A947-4E79-811C-EC795B4421D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoPizza", "Entity_Framework_Core_for_Beginners\ContosoPizza.csproj", "{AC6F36F7-A947-4E79-811C-EC795B4421D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExisitingDataBaseToCode", "ExisitingDataBaseToCode\ExisitingDataBaseToCode.csproj", "{52065B90-D8AA-4D43-AC4F-D768B0ADF7C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AC6F36F7-A947-4E79-811C-EC795B4421D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC6F36F7-A947-4E79-811C-EC795B4421D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC6F36F7-A947-4E79-811C-EC795B4421D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52065B90-D8AA-4D43-AC4F-D768B0ADF7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52065B90-D8AA-4D43-AC4F-D768B0ADF7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52065B90-D8AA-4D43-AC4F-D768B0ADF7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52065B90-D8AA-4D43-AC4F-D768B0ADF7C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
