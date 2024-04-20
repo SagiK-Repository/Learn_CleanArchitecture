@@ -1,7 +1,13 @@
+using ExisitingDB3API.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ContosoPizzaPart1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ContosoPizza"))
+);
 
 var app = builder.Build();
 
