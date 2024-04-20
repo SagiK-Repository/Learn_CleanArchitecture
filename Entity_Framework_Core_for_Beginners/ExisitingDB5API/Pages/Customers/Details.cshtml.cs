@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ExisitingDB3API.Data;
 using ExisitingDB3API.Models;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace ExisitingDB5API.Pages.Customers
 {
@@ -20,6 +21,8 @@ namespace ExisitingDB5API.Pages.Customers
         }
 
         public Customer Customer { get; set; } = default!;
+        public int CustomerId { get; private set; }
+        public Product? Product { get; private set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,7 +31,8 @@ namespace ExisitingDB5API.Pages.Customers
                 return NotFound();
             }
 
-            var customer = await _context.Customers.FirstOrDefaultAsync(m => m.Id == id);
+            // var customer = await _context.Customers.FirstOrDefaultAsync(m => m.Id == id);
+            var customer = await _context.Customers.FindAsync(id);
             if (customer == null)
             {
                 return NotFound();
@@ -37,6 +41,26 @@ namespace ExisitingDB5API.Pages.Customers
             {
                 Customer = customer;
             }
+            return Page();
+        }
+
+        public async Task<IActionResult> OnGetAsync(int? id, int customerId)
+        {
+            if (id == null)
+                return NotFound();
+
+            CustomerId = customerId;
+
+            Product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (Product == null)
+                return NotFound();
+
+            if (CustomerId > 0)
+                Customer = await _context.Customers
+                    .FromSqlInterpolated($"SELECT * FROM Customers WHERE Id = {CustomerId}")
+                    .FirstOrDefaultAsync();
+
             return Page();
         }
     }
