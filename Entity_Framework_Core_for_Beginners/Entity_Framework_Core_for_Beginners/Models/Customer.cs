@@ -13,5 +13,6 @@ public class Customer
     public string LastName { get; set; } = string.Empty;
     public string? Address { get; set; }
     public string? Phone { get; set; }
+    public string? Email { get; set; }
     public ICollection<Order> Orders { get; set; } = null!;
 }
