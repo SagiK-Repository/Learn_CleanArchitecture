@@ -27,6 +27,16 @@ namespace GrpcClient
 
             Console.WriteLine($"{customer.FirstName} {customer.LastName}");
 
+            using (var call = customerClient.GetNewCustomers(new NewCustomerRequest()))
+            {
+                while (await call.ResponseStream.MoveNext(new CancellationToken()))
+                {
+                    var currentCustomer = call.ResponseStream.Current;
+
+                    Console.WriteLine($"{currentCustomer.FirstName} {currentCustomer.LastName} : {currentCustomer.EmailAddress}");
+                }
+            }
+
             Console.ReadLine();
         }
     }
