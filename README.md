@@ -18,7 +18,8 @@
 - [x] Entity Framework Core for Beginners https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/23
 - gRPC
   - [x] Intro to gRPC in C# https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/29
-
+- Dockerizing
+  - [x] Visual Studio Dockerizing https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/31
 
 ### 제작자
 [@SAgiKPJH](https://github.com/SAgiKPJH)
