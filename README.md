@@ -7,7 +7,9 @@
 - Learn CleanArchitecture
 
 ### 목차
-- [x] DDD의 Entity와 DB의 Entity 비교 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/3
+- [x] CleanArchitecture 스터디 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/5
+- CleanArchitecture 잡지식
+  - [x] DDD의 Entity와 DB의 Entity 비교 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/3
 - CleanArchitecture Code Unparalleled
   - [x] Youtube - Clean Architecture https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
   - [x] Youtube - JWT https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/13
