@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "기초 구현", "기초 구
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerHelloWorld", "기초 구현\DockerHelloWorld\DockerHelloWorld.csproj", "{33E28274-8A67-4DF6-B820-15D7379A34F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerDIService", "기초 구현\DockerDIService\DockerDIService.csproj", "{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{33E28274-8A67-4DF6-B820-15D7379A34F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33E28274-8A67-4DF6-B820-15D7379A34F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33E28274-8A67-4DF6-B820-15D7379A34F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{33E28274-8A67-4DF6-B820-15D7379A34F0} = {DDD8F788-9E92-4F85-87E0-3C1E34338877}
+		{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93} = {DDD8F788-9E92-4F85-87E0-3C1E34338877}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {230EB9B1-1064-4F6B-8013-7207FEA58CE4}
