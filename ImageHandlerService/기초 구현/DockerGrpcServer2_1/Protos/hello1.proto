@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "DockerGrpcServer.Protos";
+
+service Hello1 {
+	rpc Hello1 (Hello1Request) returns (Hello1Reply);
+}
+
+message Hello1Request {
+	string message = 1;
+}
+
+message Hello1Reply {
+	string reply = 1;
+}

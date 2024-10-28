@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <None Remove="Protos\hello1.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\hello1.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
