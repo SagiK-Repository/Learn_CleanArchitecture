@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>c5dc302a-f81d-4f03-b202-e91cd00905d1</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
+    <DockerfileContext>..\ImageHandlerService</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>

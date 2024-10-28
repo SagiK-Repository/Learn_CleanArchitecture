@@ -2,7 +2,6 @@ using DockerGrpcServer.Protos;
 using DockerGrpcServer2_1.PrintService;
 using DockerGrpcServer2_1.Services;
 using Grpc.Net.Client;
-using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
