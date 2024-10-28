@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <None Remove="Protos\hello1.proto" />
+    <None Remove="Protos\hello2.proto" />
   </ItemGroup>
 
   <ItemGroup>
     <Protobuf Include="Protos\hello1.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\hello2.proto" GrpcServices="Client" />
   </ItemGroup>
 
   <ItemGroup>
