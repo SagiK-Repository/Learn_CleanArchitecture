@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  dockergrpcserver2_1:
+    image: ${DOCKER_REGISTRY-}dockergrpcserver21
+    build:
+      context: 기초 구현/DockerGrpcServer2_1/ImageHandlerService
+      dockerfile: Dockerfile
+
+  dockergrpcserver2_2:
+    image: ${DOCKER_REGISTRY-}dockergrpcserver22
+    build:
+      context: 기초 구현/ImageHandlerService
+      dockerfile: ../DockerGrpcServer2_2/Dockerfile
+

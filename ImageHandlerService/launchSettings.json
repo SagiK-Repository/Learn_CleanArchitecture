@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "dockergrpcserver2_1": "StartDebugging",
+        "dockergrpcserver2_2": "StartDebugging"
+      }
+    }
+  }
+}
