@@ -23,6 +23,7 @@ var host = Host.CreateDefaultBuilder()
 
         services.AddSingleton(provider =>
         {
+            // SSL 인증서 검증을 비활성화
             var httpClientHandler = new HttpClientHandler();
             httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
             var channel = GrpcChannel.ForAddress(serverUrl ?? "https://localhost:5050", new GrpcChannelOptions { HttpClient = new HttpClient(httpClientHandler) });
