@@ -11,8 +11,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Properties\launchSettingsCopy.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Protos\hello1.proto" />
     <None Remove="Protos\hello2.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\launchSettingsCopy.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\launchSettingsCopy.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
