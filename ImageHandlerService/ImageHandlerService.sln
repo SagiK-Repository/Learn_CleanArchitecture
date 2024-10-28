@@ -5,13 +5,15 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "기초 구현", "기초 구현", "{DDD8F788-9E92-4F85-87E0-3C1E34338877}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerHelloWorld", "기초 구현\DockerHelloWorld\DockerHelloWorld.csproj", "{33E28274-8A67-4DF6-B820-15D7379A34F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerHelloWorld", "기초 구현\DockerHelloWorld\DockerHelloWorld.csproj", "{33E28274-8A67-4DF6-B820-15D7379A34F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerDIService", "기초 구현\DockerDIService\DockerDIService.csproj", "{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerDIService", "기초 구현\DockerDIService\DockerDIService.csproj", "{84464AB3-B1B2-4F04-BEA1-46CA5ADDEF93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerGrpcServer", "기초 구현\DockerGrpcServer\DockerGrpcServer.csproj", "{3AB3F147-3B7E-4484-9CF0-FEC33C9DC4C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcServer", "기초 구현\DockerGrpcServer\DockerGrpcServer.csproj", "{3AB3F147-3B7E-4484-9CF0-FEC33C9DC4C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerGrpcClient", "기초 구현\DockerGrpcClient\DockerGrpcClient.csproj", "{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcClient", "기초 구현\DockerGrpcClient\DockerGrpcClient.csproj", "{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7525FEC5-3678-4DDE-A413-54C15FB3C975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7525FEC5-3678-4DDE-A413-54C15FB3C975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7525FEC5-3678-4DDE-A413-54C15FB3C975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7525FEC5-3678-4DDE-A413-54C15FB3C975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7525FEC5-3678-4DDE-A413-54C15FB3C975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,6 +13,8 @@ build.SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", optional: true)
     .AddEnvironmentVariables();
 
+Thread.Sleep(1000);
+
 var host = Host.CreateDefaultBuilder()
     .ConfigureServices((context, services) =>
     {
@@ -21,7 +23,9 @@ var host = Host.CreateDefaultBuilder()
 
         services.AddSingleton(provider =>
         {
-            var channel = GrpcChannel.ForAddress(serverUrl??"https://localhost:7193");
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
+            var channel = GrpcChannel.ForAddress(serverUrl ?? "https://localhost:5050", new GrpcChannelOptions { HttpClient = new HttpClient(httpClientHandler) });
             return new Hello.HelloClient(channel);
         });
         // services.AddTransient<IPrint, PrintConsole>();
