@@ -6,10 +6,17 @@ services:
     build:
       context: 기초 구현/DockerGrpcServer2_1/ImageHandlerService
       dockerfile: Dockerfile
+    networks:
+      - my_network
 
   dockergrpcserver2_2:
     image: ${DOCKER_REGISTRY-}dockergrpcserver22
     build:
       context: 기초 구현/ImageHandlerService
       dockerfile: ../DockerGrpcServer2_2/Dockerfile
-
+    networks:
+      - my_network
+      
+networks:
+  my_network:
+    driver: bridge
