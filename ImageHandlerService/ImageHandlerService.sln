@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcServer", "기초 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcClient", "기초 구현\DockerGrpcClient\DockerGrpcClient.csproj", "{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{170EA4AB-DDE6-4953-9696-61A14028CB96}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcServer2_1", "기초 구현\DockerGrpcServer2_1\DockerGrpcServer2_1.csproj", "{EB3BC61F-B5C6-40EF-9793-1804D99B0293}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerGrpcServer2_2", "기초 구현\DockerGrpcServer2_2\DockerGrpcServer2_2.csproj", "{6126D48F-EA03-46DD-A256-D982FD839D25}"
@@ -41,10 +39,6 @@ Global
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C23661D-B599-4B7C-AFE8-08734A6C1E8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{170EA4AB-DDE6-4953-9696-61A14028CB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{170EA4AB-DDE6-4953-9696-61A14028CB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{170EA4AB-DDE6-4953-9696-61A14028CB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{170EA4AB-DDE6-4953-9696-61A14028CB96}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB3BC61F-B5C6-40EF-9793-1804D99B0293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB3BC61F-B5C6-40EF-9793-1804D99B0293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3BC61F-B5C6-40EF-9793-1804D99B0293}.Release|Any CPU.ActiveCfg = Release|Any CPU
