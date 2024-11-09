@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  dockerdb.platform.db.postgre:
+    build: 
+      dockerfile: Docker DB/DockerDB.Platform.DB/Postgre/Dockerfile
+    ports:
+      - "5432:5432"
+
+  dockerdbserver:
+    image: ${DOCKER_REGISTRY-}dockerdbserver
+    build:
+      context: .
+      dockerfile: Docker DB/DockerDBServer/Dockerfile
+
+
+  dockerdbclient:
+    image: ${DOCKER_REGISTRY-}dockerdbclient
+    build:
+      context: .
+      dockerfile: Docker DB/DockerDBClient/Dockerfile
