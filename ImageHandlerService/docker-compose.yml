@@ -4,6 +4,8 @@ services:
   dockerdb.platform.db.postgre:
     build: 
       dockerfile: Docker DB/DockerDB.Platform.DB/Postgre/Dockerfile
+    volumes:
+      - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
@@ -19,3 +21,6 @@ services:
     build:
       context: .
       dockerfile: Docker DB/DockerDBClient/Dockerfile
+
+volumes:
+    pgdata:
