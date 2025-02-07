@@ -7,8 +7,8 @@
 - Learn CleanArchitecture
 
 ### 스터디
-- [x] [책 : 도메인 주도 설계 철저 입문 - 코드와 패턴으로 밑바닥부터 이해하는 DDD](https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/1)
-  - [ ] [Deep](https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/4)
+- [x] 책 : 도메인 주도 설계 철저 입문 - 코드와 패턴으로 밑바닥부터 이해하는 DDD https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/1
+  - [ ] Deep https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/4
 - [x] CleanArchitecture 스터디 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/5
 - CleanArchitecture 잡지식
   - [x] DDD의 Entity와 DB의 Entity 비교 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/3
