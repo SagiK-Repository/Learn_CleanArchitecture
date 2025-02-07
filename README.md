@@ -6,10 +6,14 @@
 - Learn_DDD, Domain Driven Design, 도메인 주도 설계 익히기
 - Learn CleanArchitecture
 
-### 목차
+### 스터디
+- [x] [책 : 도메인 주도 설계 철저 입문 - 코드와 패턴으로 밑바닥부터 이해하는 DDD](https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/1)
+  - [ ] [Deep](https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/4)
 - [x] CleanArchitecture 스터디 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/5
 - CleanArchitecture 잡지식
   - [x] DDD의 Entity와 DB의 Entity 비교 https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/3
+
+### 실용
 - CleanArchitecture Code Unparalleled
   - [x] Youtube - Clean Architecture https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/9
   - [x] Youtube - JWT https://github.com/SagiK-Repository/Learn_CleanArchitecture/issues/13
