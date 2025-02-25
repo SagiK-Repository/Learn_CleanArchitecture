@@ -1,0 +1,26 @@
+services:
+  client:
+    image: ${DOCKER_REGISTRY-}client
+    build:
+      context: .
+      dockerfile: Client/Dockerfile
+    depends_on:
+      - server
+    networks:
+      - my_custom_network
+    privileged: true
+
+  server:
+    image: ${DOCKER_REGISTRY-}server
+    build:
+      context: .
+      dockerfile: Server/Dockerfile
+    networks:
+      - my_custom_network
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+      
+networks:
+  my_custom_network:
+    driver: bridge

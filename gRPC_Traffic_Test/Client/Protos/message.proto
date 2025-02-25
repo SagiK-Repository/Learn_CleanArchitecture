@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package streamService;
+
+service StreamService {
+    rpc StreamData(StreamingRequest) returns (stream StreamingResponse);
+}
+
+message StreamingRequest {
+    string message = 1;
+}
+
+message StreamingResponse {
+    string response = 1;
+}
